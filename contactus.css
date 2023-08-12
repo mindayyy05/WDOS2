@@ -1,0 +1,409 @@
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+@media (max-width:900px){
+    body{
+        color: black;
+    }
+}
+body{
+   
+    background-size:100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:white;  
+}
+
+
+nav{
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    background: rgba(0,0,0,0.4);
+    border-bottom: 1px solid black;
+}
+label.logo{
+    color:white;
+    font-size: 40px;
+    text-align: right;
+    font-family:Lucida Grande;
+    line-height: 80px;
+    padding:0 12px;
+    font-weight: bold;  
+}
+nav ul{
+    float:right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height:80px;
+    margin:0 5px;
+}
+nav ul li a{
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding:7px 13px;
+    border-radius: 3px;
+}
+a.active,a:hover{
+    background: rgb(139, 134, 134);
+    transition: .5s;
+}
+nav ul li ul{
+    position: absolute;
+    display: none;
+    background-color:lightskyblue;  
+    border-radius: 0px 0px 5px 5px;
+}
+nav ul li:hover ul{
+    display: block;
+}
+nav ul li ul li{
+    line-height: 1;
+    width: 140px;
+    border-radius: 5px;
+    padding:6px;
+    display: block;
+}
+nav ul li ul a{
+    padding: 10px 16px;
+}
+nav ul li ul li a:hover{
+    background-color: rgb(84, 150, 191);
+    transition: .5s;
+}
+nav ul li a:hover{
+    background: rgb(84, 150, 191) ;  
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+
+}
+.bars{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width:900px){
+    label.logo{
+        font-size: 20px;
+        padding-left: 5px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width:900px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(68, 152, 221);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height:30px ;
+        
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: black;
+    }
+    #check:checked~ul{
+        left: 0;
+    }
+}
+
+/*turtle banner*/
+.image-section{
+    background: url(donatello-images-final/CONTACTUS.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+  
+  }
+.background-image h2 {
+    top: 27%;
+    left: 2%;
+    color: white;
+    position: absolute;
+    font-size: 80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+.background-image p {
+    top: 41%;
+    left: 4%;
+    color: white;
+    position: absolute;
+    font-size: 27px;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+@media(max-width:900px){
+    .background-image{
+      width: 100%;
+      
+    }
+  }
+@media(max-width:900px){
+        .background-image h2 {
+        font-size:35px;
+        display: none;
+      }
+    }
+    @media(max-width:900px){
+        .background-image p {
+        font-size:20px;
+        margin-top: 1%;
+        display: none;
+      }
+    }
+ /*contact us wording*/
+ .contactus-heading h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 33px;
+    text-decoration: underline;
+}
+.contactus-heading p{
+    font-size: 21px;
+    margin-left: 3%;
+}
+  
+
+/*contact us box*/
+.contact-us{
+position: relative;
+max-height: 100vh;
+max-width: 180vh;
+padding: 50px 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+border: 2px solid black;
+margin-top: 5%;
+margin-right: 1%;
+margin-left:5.5%;
+margin-bottom: 5%;
+background:linear-gradient(lightcyan,lightblue,rgb(42, 114, 197),darkblue) ;
+}
+.contactus-container{
+width: 100%;
+display: flex;
+align-items: center;
+margin-top:30px;
+margin-top: 50%;
+}
+.contactus-container .contactus-box{
+font-weight: 500;
+color: darkblue;
+}
+.contact-form{
+width: 98%;
+padding: 40px;
+background: white;
+margin-top: -53%;
+}
+.contact-form h2 {
+font-size: 27px;
+color:black;
+font-weight: 500;
+}
+.contact-form .inputbox{
+position: relative;
+width: 100%;
+margin-top: 10px;
+}
+.contact-form .inputbox input,
+.contact-form .inputbox textarea{
+width: 100%;
+padding: 5px 0;
+font-size: 16px;
+margin: 10px 0;
+border: none;
+border-bottom: 2px solid black;
+outline: none;
+resize: none;
+}
+.contact-form .inputbox span{
+position: absolute;
+left: 0;
+padding: 5px 0;
+font-size: 16px;
+margin: 10px 0;
+pointer-events: none;
+transition: 0.5s;
+color: black;
+}
+.contact-form .inputbox input:focus ~ span,
+.contact-form .inputBox input:valid ~ span,
+.contact-form .inputBox textarea:focus ~ span,
+.contact-form .inputBox textarea:valid ~ span
+{
+color: #e91e63;
+font-size: 12px;
+transform: translateY(-20px);
+}
+.contact-form .inputBox input[type="submit"]{
+width: 100px;
+background: #00bcd4;
+color: black;
+border: none;
+cursor: pointer;
+}
+@media(max-width:768px){
+.contact-us{
+    padding: 50px;
+
+}
+.contactus-container,.contact-form{
+width: 100%;
+}
+.contact-form{
+margin-top: -50%;
+}
+.form-heading h2{
+font-size: 15px;
+font-weight: bold;
+margin-top: -15%;
+}
+.inputBox .span{
+font-size: 10px;
+}
+}
+
+ /*footer*/
+ footer{
+    position: fixed;
+    bottom: 0;
+  }
+  
+.foo-ter{
+    background-color: #2d2a30;
+    box-sizing: border-box;
+    text-align: left;
+    font: bold 16px;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+.footer-left,.footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+.footer-left{
+    width: 40%;
+    margin-left: 4%;
+}
+.foo-ter h3{
+    color: white;
+    font: 35px;
+    margin: 0;
+}
+.foo-ter h3 span{
+    color: lightblue;
+}
+.footer-links{
+    color: white;
+    margin: 20px 0 12px;
+}
+.footer-links a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+.footer-companyname{
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-right{
+    width: 40%;
+    margin-left:11%; 
+}
+.footer-companyabout{
+    line-height: 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+.footer-companyabout span{
+    display: block;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-links a:hover{
+    color: lightblue;
+}
+
+@media(max-width:900px){
+  .footer{
+    flex-wrap: wrap;
+  }
+  .footer-right{
+    margin-left: -8%;
+    width:90%
+  }
+  .footer-left{
+    width: 100%;
+    margin-left: -5%;
+  }
+  .foo-ter.footer-links, .foo-ter, .foo-ter.footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+}
+footer{
+    position: static;
+}
+}
+@media(max-height:900px)
+  {
+    footer{
+        position: static;
+    }
+}
+
+
+
+

@@ -1,0 +1,113 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Payment</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="ticketsPay.css">
+    </head>
+    <body>
+       
+        <div>
+            <nav>
+            
+                <label class="logo">BUY TICKETS</label>
+                <label class="tickets">Tickets > Details > Payment</label>
+               
+            </nav>
+            </div>
+            <!--turtle banner-->
+      
+            <div class="background-image">
+              <div class="image-section"></div>
+               
+                
+              </div><br>
+            <br>
+            <h1>Payment</h1><br>
+            <p><i>Please enter your payment details in the form below</i></p>
+            <div class="flex">
+            <div class="container">
+                <form action="confirm.html" method="post" id="paymentForm">
+                    <div class="form-group">
+                        <label for="cardNumber">Card Number:</label>
+                        <input type="text" id="cardNumber" name="cardNumber" maxlength="16" required>
+                        <div class="error-message" id="cardNumberError"></div>
+                    </div>
+        
+                    <div class="flex-flex">
+                    <div class="form-group">
+                        <label for="expiryDate">Expiry Date:</label>
+                        <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+                        <div class="error-message" id="expiryDateError"></div>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="cvv">CVC/CVV:</label>
+                        <input type="text" id="cvv" name="cvv" maxlength="4" placeholder="1234" required>
+                        <div class="error-message" id="cvvError"></div>
+                    </div>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="nameOnCard">Name on Card:</label>
+                        <input type="text" id="nameOnCard" name="nameOnCard" placeholder=" Mindi Chenaya" required>
+                        <div class="error-message" id="nameOnCardError"></div>
+                    </div>
+                    
+                    <div class="submit">
+                        <button type="submit" id="submitButton" >Submit</button>
+                        </div>
+                </form>
+            </div>
+
+            <div class="vertical">
+                
+            </div>
+                    
+
+            <div class="table">
+
+            </div>
+            </div>
+             <!--footer-->
+        <footer class="foo-ter">
+            <div class="footer-left">
+                <h3>Donatello<span>Hatcheries</span></h3>
+
+                <p class="footer-links">
+                    <a href="index.html">Home</a>
+                    |
+                    <a href="turtlecategories.html">Categories</a>
+                    |
+                    <a href="Hikkaduwahatchery.html">Hikkaduwa hatchery</a>
+                    |
+                    <a href="otherturtlehatcheries.html">Kosgoda & Benthota hatcheries</a>
+                    |
+                    <a href="threatstoturtles.html">Threats</a>
+                    |
+                    <a href="purchasendonate.html">Purchase/Donate</a>
+                    |
+                    <a href="contactus.html">Contact us</a>
+                    
+                </p><br><br>
+                
+
+                
+            </div>
+
+          
+            <div class="footer-right">
+               <p class="footer-companyabout">
+                <span>About us</span>
+                <strong>Donatello Hatcheries</strong> is a website where you can find all the information you need to know about turtles from all types of turtles to threats of turtles to all the turtle hactheries you can visit including the main hatchery being Hikkaduwa to turtle merch to many more! 
+               </p><br><br>
+               <p class="footer-companyname"> &copy;2023 Mindi Chenaya's Turtle hatchery web.<br>All rights reserved.</p>
+
+              
+            </div> 
+<script src="ticketsPay.js"></script>
+</footer>
+
+        </body>
+        </html>

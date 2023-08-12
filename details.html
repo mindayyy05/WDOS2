@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Details</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="details.css">
+        <link rel="stylesheet" href="international-telephone-input.css">
+    
+    </head>
+   
+       
+         <body>
+       
+        <div>
+            <nav>
+              <form>
+                
+                <label class="logo">BUY TICKETS</label>
+                <label class="tickets">Tickets > Details</label>
+                </form>
+               
+            </nav>
+            </div>
+            <!--turtle banner-->
+
+            <div class="background-image">
+              <div class="image-section"></div>
+               
+                
+              </div><br>
+          <br>
+            <h1>Details</h1><br>
+            <p><i>Please enter your details and fill the following form</i></p><br>
+            <div class="flexSum">
+
+               
+            <!-- Mobile number:<br>
+                        <div class="iti">
+                            <input type="tel" name="phone" id="phonee" required>
+                            <div class="error"></div>
+                        </div>-->
+
+                       
+                        <div class="flexSum">
+                           
+                            <div class="container">
+                                
+               
+                                <form id="registrationForm" action="ticketsPay.html" method="post">
+                                    <div class="form-group">
+                                        <label for="fullName">Full Name:</label>
+                                        <input type="text" id="fullName" name="fullName" required>
+                                        <div class="error-message" id="fullNameError"></div>
+                                    </div>
+                                   
+                            
+                                    <div class="form-group">
+                                        <label>Gender:</label>
+                                       <select id="gender">
+                                        <option>Female</option>
+                                        <option>Male</option>
+                                       </select>
+                                    </div>
+                        
+                                    <div class="iti">
+                                        <label for="phoneNumber">Phone Number:</label>
+                                        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                                        <div class="error-message" id="phoneNumberError"></div>
+                                    </div>
+                        
+                                    <div class="form-group">
+                                        <label for="email">Email:</label>
+                                        <input type="email" id="email" name="email" required>
+                                        <div class="error-message" id="emailError"></div>
+                                    </div>
+                        
+                                    <div class="form-group">
+                                        <label for="confirmEmail">Confirm Email:</label>
+                                        <input type="email" id="confirmEmail" name="confirmEmail" required>
+                                        <div class="error-message" id="confirmEmailError"></div>
+                                    </div>
+                                
+                        
+                                   
+                                    <div class="submit">
+                                        <button type="submit" id="submitButton" >Submit</button>
+                                        </div>
+                                   
+                                </form>
+                            </div>
+                            </div>
+
+                            <div class="vertical"></div>
+
+
+
+                    <div class="table">
+                        <div id="summary">
+                            <table>
+                              <!-- Populate the summary table with data from local storage -->
+                              <tr>
+                                <th>Date:</th>
+                                <td><span id="selectedDate1"></span></td>
+                              </tr>
+                              <tr>
+                                <th>Time:</th>
+                                <td><span id="timeSlot"></span></td>
+                              </tr>
+                              <tr>
+                                <th>Duration:</th>
+                                <td><span id="duration"></span></td>
+                              </tr>
+                              <tr>
+                                <th class="bold">Tickets:</th>
+                                <td class="bold">Charges</td>
+                              </tr>
+
+                              <tr>
+                                <td><div>SL Child: <span id="slChildTicket">0</span></div></td>
+                                <td><div>SL Child: <span id="slChildCharge">0</span> USD</div></td>
+                              </tr>
+                              <tr>
+                                <td><div>SL Adult: <span id="slAdultTicket">0</span></div></td>
+                                <td><div>SL Adult: <span id="slAdultCharge">0</span> USD</div></td>
+                              </tr>
+                              <tr>
+                                <td><div>Foreigner Child: <span id="foreignerChildTicket">0</span></div></td>
+                                <td><div>Foreigner Child: <span id="foreignerChildCharge">0</span> USD</div></td>
+                              </tr>
+                              <tr>
+                                <td><div>Foreigner Adult: <span id="foreignerAdultTicket">0</span></div></td>
+                                <td><div>Foreigner Adult: <span id="foreignerAdultCharge">0</span> USD</div></td>
+                              </tr>
+                              <tr>
+                                <td><div>Infant: <span id="infantTicket">0</span></div></td>
+                                <td><div>Infant: <span id="infantCharge">0</span> USD</div></td>
+                              </tr>
+                             
+                        
+                              <tr>
+                                <th class="bold">Total Payable</th>
+                                <td class="bold"><div id="chargeSummary"></div></td>
+                              </tr>
+                            </table>
+                          </div>
+
+                    </div>
+                    </div>
+              
+        <!--footer-->
+        <footer class="foo-ter">
+            <div class="footer-left">
+                <h3>Donatello<span>Hatcheries</span></h3>
+
+                <p class="footer-links">
+                    <a href="index.html">Home</a>
+                    |
+                    <a href="turtlecategories.html">Categories</a>
+                    |
+                    <a href="Hikkaduwahatchery.html">Hikkaduwa hatchery</a>
+                    |
+                    <a href="otherturtlehatcheries.html">Kosgoda & Benthota hatcheries</a>
+                    |
+                    <a href="threatstoturtles.html">Threats</a>
+                    |
+                    <a href="purchasendonate.html">Purchase/Donate</a>
+                    |
+                    <a href="contactus.html">Contact us</a>
+                    
+                </p><br><br>
+                
+
+                
+            </div>
+
+          
+            <div class="footer-right">
+               <p class="footer-companyabout">
+                <span>About us</span>
+                <strong>Donatello Hatcheries</strong> is a website where you can find all the information you need to know about turtles from all types of turtles to threats of turtles to all the turtle hactheries you can visit including the main hatchery being Hikkaduwa to turtle merch to many more! 
+               </p><br><br>
+               <p class="footer-companyname"> &copy;2023 Mindi Chenaya's Turtle hatchery web.<br>All rights reserved.</p>
+
+              
+            </div> 
+
+            <script src="international-telephone-input.js"></script>
+            <script src="details.js"></script>
+            </footer>
+            </body>
+            </html>
